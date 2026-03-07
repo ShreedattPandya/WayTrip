@@ -1,199 +1,179 @@
-.slider {
-  z-index: 99;
-}
-
-.slider .carousel .carousel-item img {
-  width: 100%;
-  height: 80vh;
-  object-fit: cover;
-}
-
-.slider .carousel {
+.hero-section {
   position: relative;
-}
-
-.slider .carousel .carousel-item .carousel-caption {
-  z-index: 9;
-  bottom: 20%;
-}
-
-.slider .carousel .carousel-item .carousel-caption h5 {
-  font-size: 55px;
-  color: var(--white);
-  line-height: 140%;
-  text-align: center;
-  font-weight: 900;
-  letter-spacing: 1.5px;
-}
-
-.slider .carousel .carousel-item .carousel-caption h5 span {
-  display: block;
-}
-
-.slider .carousel .carousel-item .carousel-caption .slider_des p {
-  font-size: var(--subTitle);
-  color: var(--white);
-  line-height: 150%;
-  text-align: center;
-  font-weight: 500;
-}
-
-.slider .carousel .carousel-item .slider_des {
-  animation: fadeUp 0.9s ease-out 0.2s both;
-}
-
-.slider .carousel::after {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.hero-section .carousel {
+  position: relative;
   height: 100%;
 }
 
-.slider .carousel .carousel-control-prev,
-.slider .carousel .carousel-control-next {
-  z-index: 100;
-  position: absolute;
-  top: 45%;
-  width: 55px;
-  height: 55px;
-  display: block;
-  border-radius: 100%;
-  transition: box-shadow 0.3ms;
-  background: var(--primaryClr);
-  opacity: 1;
+.hero-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
-.slider .carousel .carousel-control-prev:hover,
-.slider .carousel .carousel-control-next:hover {
-  box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.267);
+.hero-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-.slider .carousel .carousel-control-prev::after,
-.slider .carousel .carousel-control-next::after,
-.slider .carousel .carousel-control-prev::before,
-.slider .carousel .carousel-control-next::before {
+/* Gradient underneath image so white text pops and bottom transition works */
+.hero-img-wrapper::after {
   content: "";
   position: absolute;
-  left: 43%;
-  background: var(--white);
-  width: 0.4rem;
-  min-width: 3px;
-  border-radius: 3px;
-  height: 34%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.85) 100%);
+  z-index: 1;
 }
 
-.slider .carousel .carousel-control-prev {
-  left: 40px;
+/* The dark blend at the absolute bottom */
+.hero-bottom-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+  z-index: 5;
+  pointer-events: none;
 }
 
-.slider .carousel .carousel-control-prev::before {
-  transform: rotate(45deg);
-  top: 24%;
+.hero-caption {
+  position: absolute;
+  z-index: 10;
+  top: 45%;
+  bottom: auto;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.slider .carousel .carousel-control-prev::after {
-  transform: rotate(-45deg);
-  bottom: 24%;
+.hero-content {
+  padding: 0 20px;
+  animation: fadeInUp 1.5s ease;
 }
 
-.slider .carousel .carousel-control-next {
-  right: 40px;
+.hero-subtitle {
+  font-family: var(--fontFamily1), serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: -15px;
 }
 
-.slider .carousel .carousel-control-next::before {
-  left: auto;
-  right: 43%;
-  transform: rotate(-45deg);
-  top: 24%;
+.hero-title {
+  font-family: var(--fontFamily), sans-serif;
+  font-size: 130px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: 5px;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  margin: 0;
+  text-transform: uppercase;
 }
 
-.slider .carousel .carousel-control-next::after {
-  left: auto;
-  right: 43%;
-  transform: rotate(45deg);
-  bottom: 24%;
+/* Bottom Categories styling */
+.hero-categories {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
 }
 
-.slider .carousel .carousel-control-prev span,
-.slider .carousel .carousel-control-next span {
-  display: none;
+.category-item {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  position: relative;
 }
 
-@keyframes fadeUp {
+.category-item:hover {
+  color: #f7d117;
+  /* Incredible India Yellow Accent */
+}
+
+.category-divider {
+  width: 2px;
+  height: 22px;
+  background-color: #f7d117;
+  /* Yellow divider */
+}
+
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-@media only screen and (max-width: 991px) {
-  .slider .carousel .carousel-item .carousel-caption {
-    bottom: 18%;
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 90px;
   }
 
-  .slider .carousel .carousel-item .carousel-caption h5 {
-    font-size: 35px;
+  .hero-subtitle {
+    font-size: 22px;
   }
-  .slider .carousel .carousel-item .carousel-caption .slider_des p {
-    font-size: 16px;
+
+  /* Hide on small screens for better UX */
+  .hero-categories {
+    gap: 20px;
+    flex-wrap: wrap;
+    bottom: 60px;
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .slider .carousel .carousel-item img {
-    height: 320px;
-    object-fit: cover;
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 55px;
   }
 
-  .slider .carousel .carousel-item .carousel-caption {
-    bottom: 22%;
-    padding: 0 0 20px 0;
-    z-index: 9;
+  .hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 5px;
   }
 
-  .slider .carousel .carousel-item .carousel-caption h5 {
-    font-size: 26px;
+  .hero-categories {
+    bottom: 40px;
   }
 
-  .slider .carousel .carousel-item .carousel-caption h5 span {
-    display: inline-block;
+  .category-item {
+    font-size: 13px;
   }
 
-  .slider .carousel .carousel-item .carousel-caption .slider_des p {
-    font-size: 14px;
+  .category-divider {
+    height: 16px;
   }
-
-  .slider .carousel .carousel-control-next,
-  .slider .carousel .carousel-control-prev {
-    width: 40px;
-    height: 40px;
-  }
-
-}
-
-@media only screen and (max-width: 420px) {
-
-  .slider .carousel .carousel-item .carousel-caption {
-    right: 3%;
-    left: 3%;
-    bottom: 16%;
-    padding: 0 0 20px 0;
-    z-index: 9;
-  }
-
-  .slider .carousel .carousel-control-next,
-  .slider .carousel .carousel-control-prev {
-    width: 30px;
-    height: 30px;
-   
-    
-  }
-
 }

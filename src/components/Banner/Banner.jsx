@@ -1,49 +1,76 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import sliderImg from "../../assets/images/slider/1.png";
-import sliderImg1 from "../../assets/images/slider/2.png";
-import "../Banner/banner.css"
+import sliderImg1 from "../../assets/images/slider/gen_hero_1.png";
+import sliderImg2 from "../../assets/images/slider/gen_hero_2.png";
+import sliderImg3 from "../../assets/images/slider/gen_hero_3.png";
+import sliderImg4 from "../../assets/images/slider/gen_hero_4.png";
+import "./banner.css";
 
 const Banner = () => {
   return (
-    <>
-      <section className="slider">
-        <Carousel variant="dark">
-          <Carousel.Item>
-            <img src={sliderImg} className="d-block w-100" alt="First slide" />
-            <Carousel.Caption>
-              <div className="slider_des">
-                <h5 className="heading">
-                SEE THE WORLD <span>ONE TRIP AT A TIME!</span>
-                </h5>
-                <p className="sub_text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
-                </p>
-              </div>
-            </Carousel.Caption>
-          </Carousel.Item>
+    <section className="hero-section">
+      <Carousel fade indicators={false} controls={false} interval={4000} pause={false}>
+        <Carousel.Item>
+          <div className="hero-img-wrapper">
+            <img src={sliderImg1} className="d-block w-100" alt="Tropical Beach" />
+          </div>
+          <Carousel.Caption className="hero-caption">
+            <div className="hero-content">
+              <span className="hero-subtitle">Discover the majestic beauty of</span>
+              <h1 className="hero-title">PARADISE</h1>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
 
-          <Carousel.Item>
-            <img src={sliderImg1} className="d-block w-100" alt="First slide" />
-            <Carousel.Caption>
-              <div className="slider_des">
-                <h5 className="heading">
-                  ADVENTURE IS CALLING <span> ARE YOU READY!</span>
-                </h5>
-                <p className="sub_text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
-                </p>
-              </div>
-            </Carousel.Caption>
-          </Carousel.Item>
+        <Carousel.Item>
+          <div className="hero-img-wrapper">
+            <img src={sliderImg2} className="d-block w-100" alt="Mountain Night" />
+          </div>
+          <Carousel.Caption className="hero-caption">
+            <div className="hero-content">
+              <span className="hero-subtitle">Experience the breathtaking heights of</span>
+              <h1 className="hero-title">ADVENTURE</h1>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
 
-        </Carousel>
-      </section>
-    </>
+        <Carousel.Item>
+          <div className="hero-img-wrapper">
+            <img src={sliderImg3} className="d-block w-100" alt="Ancient Temple" />
+          </div>
+          <Carousel.Caption className="hero-caption">
+            <div className="hero-content">
+              <span className="hero-subtitle">Uncover the spiritual mysteries of</span>
+              <h1 className="hero-title">HERITAGE</h1>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <div className="hero-img-wrapper">
+            <img src={sliderImg4} className="d-block w-100" alt="Green Valley Tea Garden" />
+          </div>
+          <Carousel.Caption className="hero-caption">
+            <div className="hero-content">
+              <span className="hero-subtitle">Breathe in the tranquility of</span>
+              <h1 className="hero-title">NATURE</h1>
+            </div>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+
+      {/* Bottom Categories Navigation */}
+      <div className="hero-categories">
+        <div className="category-item">Destinations</div>
+        <div className="category-divider"></div>
+        <div className="category-item">Nature</div>
+        <div className="category-divider"></div>
+        <div className="category-item">Heritage</div>
+        <div className="category-divider"></div>
+        <div className="category-item">Spiritual</div>
+      </div>
+      <div className="hero-bottom-gradient"></div>
+    </section>
   );
 };
 

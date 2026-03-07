@@ -21,7 +21,7 @@ import image8 from "../../assets/images/new/8.jpg";
 export const popularsData = [
   {
     id: 0,
-    title : "Discover Singapore",
+    title: "Discover Singapore",
     image: Singapore,
     location: "European Way, Southampton, United Kingdom",
     category: ["Escorted Tour", "Rail Tour"],
@@ -30,10 +30,11 @@ export const popularsData = [
     afterDiscount: 92,
     rating: 3,
     reviews: 5,
+    externalLink: "https://www.visitsingapore.com/en/",
   },
   {
     id: 1,
-    title : "Kiwiana Panorama",
+    title: "Kiwiana Panorama",
     image: Kiwiana,
     location: "European Way, Southampton, United Kingdom",
     category: ["River Cruise", "Wildlife"],
@@ -45,7 +46,7 @@ export const popularsData = [
   },
   {
     id: 2,
-    title : "Anchorage To Quito",
+    title: "Anchorage To Quito",
     image: Quito,
     location: "European Way, Southampton, United Kingdom",
     category: ["Escorted Tour", "River Cruise"],
@@ -57,7 +58,7 @@ export const popularsData = [
   },
   {
     id: 3,
-    title : "Anchorage To La Paz",
+    title: "Anchorage To La Paz",
     image: Anchorage,
     location: "European Way, Southampton, United Kingdom",
     category: ["River Cruise", "Rail Tour"],
@@ -66,10 +67,11 @@ export const popularsData = [
     afterDiscount: 0,
     rating: 5,
     reviews: 20,
+    externalLink: "https://www.visitbolivia.org/",
   },
   {
     id: 4,
-    title : "Cuzco To Anchorage",
+    title: "Cuzco To Anchorage",
     image: Cuzco,
     location: "European Way, Southampton, United Kingdom",
     category: ["River Cruise", "Tour & Cruise"],
@@ -81,7 +83,7 @@ export const popularsData = [
   },
   {
     id: 5,
-    title : "Anchorage To Ushuaia",
+    title: "Anchorage To Ushuaia",
     image: Ushuaia,
     location: "European Way, Southampton, United Kingdom",
     category: ["Escorted Tour", "Wildlife"],
@@ -93,7 +95,7 @@ export const popularsData = [
   },
   {
     id: 6,
-    title : "Anchorage To Santiago",
+    title: "Anchorage To Santiago",
     image: Santiago,
     location: "European Way, Southampton, United Kingdom",
     category: ["Escorted Tour", "Wildlife"],
@@ -102,10 +104,11 @@ export const popularsData = [
     afterDiscount: 0,
     rating: 5,
     reviews: 18,
+    externalLink: "https://chile.travel/en/where-to-go/central-area/santiago-and-outskirts/santiago",
   },
   {
     id: 7,
-    title : "LA Explorer",
+    title: "LA Explorer",
     image: Explorer,
     location: "European Way, Southampton, United Kingdom",
     category: ["Rail Tour", "Tour & Cruise"],
@@ -114,11 +117,12 @@ export const popularsData = [
     afterDiscount: 0,
     rating: 4,
     reviews: 22,
+    externalLink: "https://www.visitcalifornia.com/places-to-visit/los-angeles/",
   },
 ];
 
 export const tourDetails = {
-  title : "Beautiful Bali with Malaysia",
+  title: "Beautiful Bali with Malaysia",
   des: ` Bali, also known as the land of gods has plenty to offer to travelers from across the globe. As it so contrasted oh estimating instrument. Size like body some one had.  Are conduct viewing boy minutes warrant the expense?  Tolerably behavior may admit daughters offending her ask own. Praise effect wishes change way and any wanted.  Lively use looked latter regard had. Do he it part more  last in. We understand that theory is important to build a solid foundation, we understand that theory alone isn’t going to get the job done so that’s why this is packed with practical hands-on examples that you can  follow step by step.`,
   tourInfo: [
     '<strong className="font-bold"> Place Covered</strong>: Bali - Ubud',
@@ -134,38 +138,38 @@ export const tourDetails = {
     "Meant balls it if up doubt small purse. Required his  you put the outlived answered position. A pleasure exertion if believed provided to.",
   ],
 
-  itinerary:[
+  itinerary: [
     {
-      title : `<span class="me-1 fw-bold">Day 1:</span>  Airport Pick Up `,
-      des:` Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first Day is just a check-in Day so you have this freedom to explore the city and get settled in.`,
+      title: `<span class="me-1 fw-bold">Day 1:</span>  Airport Pick Up `,
+      des: ` Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first Day is just a check-in Day so you have this freedom to explore the city and get settled in.`,
     },
 
     {
-      title : `<span class="me-1 fw-bold">Day 2:</span>  Temples & River Cruise `,
-      des:` Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first Day is just a check-in Day so you have this freedom to explore the city and get settled in. `,
+      title: `<span class="me-1 fw-bold">Day 2:</span>  Temples & River Cruise `,
+      des: ` Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first Day is just a check-in Day so you have this freedom to explore the city and get settled in. `,
     },
     {
-      title : `<span class="me-1 fw-bold">Day 3:</span>  Massage & Overnight Train`,
-      des:` Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first Day is just a check-in Day so you have this freedom to explore the city and get settled in.`,
+      title: `<span class="me-1 fw-bold">Day 3:</span>  Massage & Overnight Train`,
+      des: ` Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first Day is just a check-in Day so you have this freedom to explore the city and get settled in.`,
     },
     {
-      title : `<span class="me-1 fw-bold">Day 4:</span>  Khao Sok National Park `,
-      des:` Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first Day is just a check-in Day so you have this freedom to explore the city and get settled in.`,
+      title: `<span class="me-1 fw-bold">Day 4:</span>  Khao Sok National Park `,
+      des: ` Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first Day is just a check-in Day so you have this freedom to explore the city and get settled in.`,
     },
     {
-      title : `<span class="me-1 fw-bold">Day 5:</span>  Travel to Koh Phangan `,
-      des:` Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first Day is just a check-in Day so you have this freedom to explore the city and get settled in.
+      title: `<span class="me-1 fw-bold">Day 5:</span>  Travel to Koh Phangan `,
+      des: ` Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first Day is just a check-in Day so you have this freedom to explore the city and get settled in.
       `,
     },
     {
-      title : `<span class="me-1 fw-bold">Day 6:</span> Morning Chill & Muay Thai Lesson `,
-      des:`Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first Day is just a check-in Day so you have this freedom to explore the city and get settled in.
+      title: `<span class="me-1 fw-bold">Day 6:</span> Morning Chill & Muay Thai Lesson `,
+      des: `Like on all of our trips, we can collect you from the airport when you land and take you directly to your hotel. The first Day is just a check-in Day so you have this freedom to explore the city and get settled in.
       `,
     },
-    
+
   ],
 
-  included:[
+  included: [
     'Comfortable stay for 4 nights in your preferred category Hotels',
     'Professional English speaking guide to help you explore the cities',
     'Breakfast is included as mentioned in Itinerary.',
@@ -175,7 +179,7 @@ export const tourDetails = {
     'Visit Bali Safari & Marine Park with Jungle Hopper Pass    ',
 
   ],
-  exclusion:[
+  exclusion: [
     'Lunch and dinner are not included in CP plans',
     'Any other services not specifically mentioned in the inclusions',
     'Medical and Travel insurance',

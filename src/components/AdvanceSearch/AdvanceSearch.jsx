@@ -11,11 +11,11 @@ const AdvanceSearch = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
-  const selectedLocation =(value)=>{
+  const selectedLocation = (value) => {
     console.log("Location", value)
   }
 
-  const selectedGuest =(value)=>{
+  const selectedGuest = (value) => {
     console.log("Guest ", value)
   }
 
@@ -48,7 +48,7 @@ const AdvanceSearch = () => {
                     selectsStart
                     startDate={startDate}
                     endDate={endDate}
-                   
+
                     dateFormat="dd, MMMM, yyyy"
                   />
                 </div>
@@ -75,10 +75,11 @@ const AdvanceSearch = () => {
                   />
                 </div>
                 <div className="item-search bd-none">
-                    <Button className="primaryBtn flex-even d-flex justify-content-center">
-                    <i className="bi bi-search me-2"></i> Search 
+                  <a href="https://www.google.com/travel/flights" target="_blank" rel="noreferrer" className="text-decoration-none w-100">
+                    <Button className="primaryBtn flex-even d-flex justify-content-center w-100">
+                      <i className="bi bi-search me-2"></i> Search
                     </Button>
-
+                  </a>
                 </div>
               </div>
             </Col>

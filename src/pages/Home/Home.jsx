@@ -76,8 +76,8 @@ const Home = () => {
       tours: "5 tours and activities",
       image: tour5,
       shortDes: "",
-      link: "/tour",
       location: "dehradun",
+      externalLink: "https://www.indonesia.travel/gb/en/destinations/bali-nusa-tenggara/bali",
     },
     {
       id: 1,
@@ -85,8 +85,8 @@ const Home = () => {
       tours: "9 tours and activities",
       image: tour4,
       shortDes: "",
-      link: "/tour",
       location: "Rishikesh",
+      externalLink: "https://www.gotokyo.org/en/index.html",
     },
     {
       id: 2,
@@ -94,8 +94,8 @@ const Home = () => {
       tours: "5 tours and activities",
       image: tour6,
       shortDes: "",
-      link: "/tour",
       location: "Mussoorie",
+      externalLink: "https://www.tourismthailand.org/Destinations/Provinces/Bangkok/219",
     },
     {
       id: 3,
@@ -103,8 +103,8 @@ const Home = () => {
       tours: "4 tours and activities",
       image: tour7,
       shortDes: "",
-      link: "/tour",
       location: "Uttarkhashi",
+      externalLink: "https://www.visitmexico.com/en/destinations/quintana-roo/cancun",
     },
     {
       id: 4,
@@ -112,8 +112,8 @@ const Home = () => {
       tours: "9 tours and activities ",
       image: tour8,
       shortDes: "",
-      link: "/tour",
       location: "Manali",
+      externalLink: "https://vietnam.travel/destinations/nha-trang",
     },
     {
       id: 5,
@@ -121,8 +121,8 @@ const Home = () => {
       tours: "4 tours and activities",
       image: tour9,
       shortDes: "4 tours and activities",
-      link: "/tour",
       location: "Haridwar",
+      externalLink: "https://www.tourismthailand.org/Destinations/Provinces/Phuket/350",
     },
   ];
 
@@ -150,17 +150,19 @@ const Home = () => {
                 {destinations.map((destination, inx) => {
                   return (
                     <div className="img-box" key={inx}>
-                      <Card>
-                        <Card.Img
-                          variant="top"
-                          src={destination.image}
-                          className="img-fluid"
-                          alt={destination.name}
-                        />
-                        <Card.Title>{destination.name}</Card.Title>
+                      <a href={destination.externalLink} target="_blank" rel="noreferrer" className="text-decoration-none">
+                        <Card>
+                          <Card.Img
+                            variant="top"
+                            src={destination.image}
+                            className="img-fluid"
+                            alt={destination.name}
+                          />
+                          <Card.Title>{destination.name}</Card.Title>
 
-                        <span className="tours">{destination.tours}</span>
-                      </Card>
+                          <span className="tours">{destination.tours}</span>
+                        </Card>
+                      </a>
                     </div>
                   );
                 })}

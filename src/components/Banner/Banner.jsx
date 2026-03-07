@@ -61,13 +61,13 @@ const Banner = () => {
 
       {/* Bottom Categories Navigation */}
       <div className="hero-categories">
-        <div className="category-item">Destinations</div>
+        <a href="https://www.incredibleindia.gov.in/en/destinations" target="_blank" rel="noreferrer" className="category-item text-decoration-none">Destinations</a>
         <div className="category-divider"></div>
-        <div className="category-item">Nature</div>
+        <a href="https://www.incredibleindia.gov.in/en/nature" target="_blank" rel="noreferrer" className="category-item text-decoration-none">Nature</a>
         <div className="category-divider"></div>
-        <div className="category-item">Heritage</div>
+        <a href="https://www.incredibleindia.gov.in/en/heritage" target="_blank" rel="noreferrer" className="category-item text-decoration-none">Heritage</a>
         <div className="category-divider"></div>
-        <div className="category-item">Spiritual</div>
+        <a href="https://www.incredibleindia.gov.in/en/spiritual" target="_blank" rel="noreferrer" className="category-item text-decoration-none">Spiritual</a>
       </div>
       <div className="hero-bottom-gradient"></div>
     </section>

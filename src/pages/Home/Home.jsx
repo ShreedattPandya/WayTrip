@@ -75,7 +75,6 @@ const Home = () => {
       name: "Bali",
       tours: "5 tours and activities",
       image: tour5,
-      link: "tour-name",
       shortDes: "",
       link: "/tour",
       location: "dehradun",
@@ -85,7 +84,6 @@ const Home = () => {
       name: "Tokyo",
       tours: "9 tours and activities",
       image: tour4,
-      link: "tour-name",
       shortDes: "",
       link: "/tour",
       location: "Rishikesh",
@@ -95,7 +93,6 @@ const Home = () => {
       name: "Bangkok",
       tours: "5 tours and activities",
       image: tour6,
-      link: "tour-name",
       shortDes: "",
       link: "/tour",
       location: "Mussoorie",
@@ -105,7 +102,6 @@ const Home = () => {
       name: "Cancun",
       tours: "4 tours and activities",
       image: tour7,
-      link: "tour-name",
       shortDes: "",
       link: "/tour",
       location: "Uttarkhashi",
@@ -115,7 +111,6 @@ const Home = () => {
       name: "Nha Trang",
       tours: "9 tours and activities ",
       image: tour8,
-      link: "tour-name",
       shortDes: "",
       link: "/tour",
       location: "Manali",
@@ -125,7 +120,6 @@ const Home = () => {
       name: "Phuket",
       tours: "4 tours and activities",
       image: tour9,
-      link: "tour-name",
       shortDes: "4 tours and activities",
       link: "/tour",
       location: "Haridwar",
@@ -177,7 +171,7 @@ const Home = () => {
       </section>
 
       {/* tour seciton start */}
-                
+
       <PopularPlace />
 
       <section className="call_us">

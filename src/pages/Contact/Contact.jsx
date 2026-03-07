@@ -41,9 +41,9 @@ const Contact = () => {
         <Container>
           <Row>
             <Col md={12}>
-              
-                <h1 className="mb-2 h1 font-bold"> Let's connect and get to know each other </h1>
-          
+
+              <h1 className="mb-2 h1 font-bold"> Let's connect and get to know each other </h1>
+
 
               <p className="body-text mt-1">
                 Passage its ten led hearted removal cordial. Preference any
@@ -67,20 +67,19 @@ const Contact = () => {
                     to means.
                   </p>
                   <div className=" d-block justify-content-between">
-                    <a type="button" className="btn btn-light me-2 btn-sm">
+                    <a href="tel:+123456789" className="btn btn-light me-2 btn-sm">
                       <i className="bi bi-phone me-1"></i>
-                        +123 456 789
-                     
+                      +123 456 789
                     </a>
-                    <a type="button" className="btn btn-light btn-sm">
-                    <i className="bi bi-telephone me-1"></i>
+                    <a href="tel:2224567586" className="btn btn-light btn-sm">
+                      <i className="bi bi-telephone me-1"></i>
                       +(222)4567 586
                     </a>
                   </div>
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg={4} md={6}  className="mb-4 mb-lg-0">
+            <Col lg={4} md={6} className="mb-4 mb-lg-0">
               <Card className="border-0 shadow  rounded-3">
                 <Card.Body className="text-center">
                   <div className="d-flex justify-content-center align-items-center my-2 ">
@@ -94,22 +93,20 @@ const Contact = () => {
                     to means.
                   </p>
                   <div className=" d-block justify-content-between">
-                    <a type="button" className="btn btn-light me-2 btn-sm">
-                     
-                        <i className="bi bi-envelope me-1"></i>
-                        <span className="body-text">example@gmail.com</span>
-                    
+                    <a href="mailto:example@gmail.com" className="btn btn-light me-2 btn-sm">
+                      <i className="bi bi-envelope me-1"></i>
+                      <span className="body-text">example@gmail.com</span>
                     </a>
                   </div>
                 </Card.Body>
               </Card>
             </Col>
-            <Col lg={4}  className="mb-4 mb-lg-0">
+            <Col lg={4} className="mb-4 mb-lg-0">
               <Card className="border-0 shadow  rounded-3">
                 <Card.Body className="text-center">
                   <div className="d-flex justify-content-center align-items-center my-2 ">
                     <div className="bg-warning bg-opacity-10 text-warning rounded-circle mb-2 flex-centered p-3">
-        
+
                       <i className="bi bi-globe2 h3"></i>
                     </div>
                   </div>
@@ -129,14 +126,14 @@ const Contact = () => {
                       <i className="bi bi-facebook"></i>
                     </ListGroup.Item>
                     <ListGroup.Item className="border-0">
-                    
+
                       <i className="bi bi-instagram"></i>
                     </ListGroup.Item>
                     <ListGroup.Item className="border-0">
                       <i className="bi bi-linkedin"></i>
                     </ListGroup.Item>
                     <ListGroup.Item className="border-0">
-                    
+
                       <i className="bi bi-twitter"></i>
                     </ListGroup.Item>
                   </ListGroup>
